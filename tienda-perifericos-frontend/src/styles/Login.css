@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;600;800&family=Share+Tech+Mono&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #090909;
+  background-image: 
+    radial-gradient(ellipse at 20% 50%, rgba(120, 40, 200, 0.15) 0%, transparent 60%),
+    radial-gradient(ellipse at 80% 50%, rgba(0, 180, 255, 0.15) 0%, transparent 60%);
+}
+
+.login-box {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 50px 45px;
+  width: 400px;
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 60px rgba(120, 40, 200, 0.15), 0 0 100px rgba(0, 180, 255, 0.1);
+}
+
+.login-title {
+  font-family: 'Exo 2', sans-serif;
+  color: #ffffff;
+  font-size: 2rem;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 8px;
+  letter-spacing: 2px;
+  background: linear-gradient(135deg, #a855f7, #3b82f6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.login-subtitle {
+  font-family: 'Share Tech Mono', monospace;
+  color: #ffffff44;
+  text-align: center;
+  margin-bottom: 35px;
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.login-input {
+  padding: 14px 18px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  color: #ffffff;
+  font-size: 0.95rem;
+  font-family: 'Exo 2', sans-serif;
+  outline: none;
+  transition: all 0.3s;
+}
+
+.login-input:focus {
+  border-color: #a855f7;
+  background: rgba(168, 85, 247, 0.08);
+  box-shadow: 0 0 20px rgba(168, 85, 247, 0.15);
+}
+
+.login-input::placeholder {
+  color: #ffffff33;
+}
+
+.login-btn {
+  padding: 14px;
+  background: linear-gradient(135deg, #a855f7, #3b82f6);
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  font-size: 0.95rem;
+  font-family: 'Exo 2', sans-serif;
+  font-weight: 700;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  transition: all 0.3s;
+  margin-top: 5px;
+}
+
+.login-btn:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(168, 85, 247, 0.4);
+}
+
+.login-error {
+  color: #f87171;
+  font-family: 'Share Tech Mono', monospace;
+  text-align: center;
+  font-size: 0.85rem;
+}

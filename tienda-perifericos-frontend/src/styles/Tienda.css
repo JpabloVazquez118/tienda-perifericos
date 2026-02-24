@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;600;800&family=Share+Tech+Mono&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.tienda-container {
+  min-height: 100vh;
+  background: #090909;
+  background-image:
+    radial-gradient(ellipse at 20% 50%, rgba(120, 40, 200, 0.1) 0%, transparent 60%),
+    radial-gradient(ellipse at 80% 50%, rgba(0, 180, 255, 0.1) 0%, transparent 60%);
+}
+
+.tienda-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(20px);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.tienda-logo {
+  font-family: 'Exo 2', sans-serif;
+  font-weight: 800;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  background: linear-gradient(135deg, #a855f7, #3b82f6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.tienda-nav-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.tienda-saludo {
+  font-family: 'Share Tech Mono', monospace;
+  color: #ffffff66;
+  font-size: 0.85rem;
+}
+
+.tienda-btn-carrito {
+  padding: 10px 20px;
+  background: rgba(168, 85, 247, 0.15);
+  border: 1px solid rgba(168, 85, 247, 0.4);
+  border-radius: 8px;
+  color: #a855f7;
+  font-family: 'Exo 2', sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-size: 0.9rem;
+}
+
+.tienda-btn-carrito:hover {
+  background: rgba(168, 85, 247, 0.25);
+  box-shadow: 0 0 20px rgba(168, 85, 247, 0.2);
+}
+
+.tienda-btn-logout {
+  padding: 10px 20px;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  color: #ffffff66;
+  font-family: 'Exo 2', sans-serif;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-size: 0.9rem;
+}
+
+.tienda-btn-logout:hover {
+  border-color: #f87171;
+  color: #f87171;
+}
+
+.tienda-content {
+  padding: 40px;
+}
+
+.tienda-titulo {
+  font-family: 'Exo 2', sans-serif;
+  font-weight: 800;
+  font-size: 2rem;
+  color: #ffffff;
+  margin-bottom: 30px;
+  letter-spacing: 2px;
+}
+
+.tienda-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 25px;
+}
+
+.tienda-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  padding: 20px;
+  transition: all 0.3s;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.tienda-card:hover {
+  border-color: rgba(168, 85, 247, 0.4);
+  box-shadow: 0 0 30px rgba(168, 85, 247, 0.1);
+  transform: translateY(-4px);
+}
+
+.tienda-card img {
+  width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+  height: 150px;
+}
+
+.tienda-card h3 {
+  font-family: 'Exo 2', sans-serif;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 1rem;
+}
+
+.tienda-card p {
+  font-family: 'Exo 2', sans-serif;
+  color: #ffffff66;
+  font-size: 0.85rem;
+}
+
+.tienda-card-precio {
+  font-family: 'Share Tech Mono', monospace;
+  color: #a855f7 !important;
+  font-size: 1.2rem !important;
+  font-weight: 700;
+}
+
+.tienda-card-stock {
+  font-family: 'Share Tech Mono', monospace;
+  color: #3b82f6 !important;
+  font-size: 0.8rem !important;
+}
+
+.tienda-btn-agregar {
+  padding: 10px;
+  background: linear-gradient(135deg, #a855f7, #3b82f6);
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-family: 'Exo 2', sans-serif;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+  margin-top: auto;
+}
+
+.tienda-btn-agregar:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 20px rgba(168, 85, 247, 0.3);
+}

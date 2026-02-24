@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;600;800&family=Share+Tech+Mono&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.carrito-container {
+  min-height: 100vh;
+  background: #090909;
+  background-image:
+    radial-gradient(ellipse at 20% 50%, rgba(120, 40, 200, 0.1) 0%, transparent 60%),
+    radial-gradient(ellipse at 80% 50%, rgba(0, 180, 255, 0.1) 0%, transparent 60%);
+}
+
+.carrito-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(20px);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.carrito-logo {
+  font-family: 'Exo 2', sans-serif;
+  font-weight: 800;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  background: linear-gradient(135deg, #a855f7, #3b82f6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.carrito-btn-regresar {
+  padding: 10px 20px;
+  background: rgba(59, 130, 246, 0.15);
+  border: 1px solid rgba(59, 130, 246, 0.4);
+  border-radius: 8px;
+  color: #3b82f6;
+  font-family: 'Exo 2', sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-size: 0.9rem;
+}
+
+.carrito-btn-regresar:hover {
+  background: rgba(59, 130, 246, 0.25);
+  box-shadow: 0 0 20px rgba(59, 130, 246, 0.2);
+}
+
+.carrito-content {
+  padding: 40px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.carrito-titulo {
+  font-family: 'Exo 2', sans-serif;
+  font-weight: 800;
+  font-size: 2rem;
+  color: #ffffff;
+  margin-bottom: 30px;
+  letter-spacing: 2px;
+}
+
+.carrito-vacio {
+  font-family: 'Share Tech Mono', monospace;
+  color: #ffffff44;
+  text-align: center;
+  margin-top: 80px;
+  font-size: 1.1rem;
+}
+
+.carrito-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 15px;
+  transition: all 0.3s;
+}
+
+.carrito-item:hover {
+  border-color: rgba(168, 85, 247, 0.3);
+}
+
+.carrito-item img {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.carrito-item-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.carrito-item-nombre {
+  font-family: 'Exo 2', sans-serif;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 1rem;
+}
+
+.carrito-item-cantidad {
+  font-family: 'Share Tech Mono', monospace;
+  color: #3b82f6;
+  font-size: 0.85rem;
+}
+
+.carrito-item-precio {
+  font-family: 'Share Tech Mono', monospace;
+  color: #a855f7;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.carrito-btn-eliminar {
+  padding: 10px 18px;
+  background: rgba(248, 113, 113, 0.1);
+  border: 1px solid rgba(248, 113, 113, 0.3);
+  border-radius: 8px;
+  color: #f87171;
+  font-family: 'Exo 2', sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-size: 0.85rem;
+}
+
+.carrito-btn-eliminar:hover {
+  background: rgba(248, 113, 113, 0.2);
+  box-shadow: 0 0 15px rgba(248, 113, 113, 0.2);
+}
+
+.carrito-footer {
+  margin-top: 30px;
+  padding-top: 25px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.carrito-total {
+  font-family: 'Exo 2', sans-serif;
+  font-weight: 800;
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+
+.carrito-total span {
+  background: linear-gradient(135deg, #a855f7, #3b82f6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.carrito-btn-vaciar {
+  padding: 12px 25px;
+  background: transparent;
+  border: 1px solid rgba(248, 113, 113, 0.4);
+  border-radius: 8px;
+  color: #f87171;
+  font-family: 'Exo 2', sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-size: 0.9rem;
+}
+
+.carrito-btn-vaciar:hover {
+  background: rgba(248, 113, 113, 0.1);
+}
