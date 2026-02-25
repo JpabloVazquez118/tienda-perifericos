@@ -48,7 +48,7 @@ function Carrito() {
       <div className="carrito-content">
         <h1 className="carrito-titulo">Mi Carrito</h1>
         {carrito.length === 0 ? (
-          <p className="carrito-vacio">// Tu carrito está vacío</p>
+          <p className="carrito-vacio">Tu carrito está vacío</p>
         ) : (
           <div>
             {carrito.map((item) => (
